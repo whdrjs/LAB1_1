@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Button and Framelayout that has images in vertical Linear layout -->
 <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -6,27 +7,27 @@
     android:layout_height="match_parent" android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
-
+    <!--button has 'onButtonClicked' class-->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="onButtonClicked"
-        android:text="CHANGE IMAGE" />
-
+        android:text="Change image" />
+<!--FrameLayout have two images-->
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+<!--default show image-->
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
             app:srcCompat="@drawable/pika20" />
-
+<!--default hiding-->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
